@@ -1,0 +1,72 @@
+/*****
+SEA ANIMATION
+******/
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Calligraffitti|Open+Sans');
+
+html, body {
+  background-color: #D0F0FF;
+}
+/*
+body {
+  justify-content: center;
+  flex-direction: column;
+}
+*/
+
+
+svg {                 /***********SEA***************/
+    width: 100% ;
+    height: 100% ;
+}
+g {                      /*************SKY**************/
+    width: 100%;
+    height: 100%;
+
+}
+.LightWaves {
+  animation: lightwaves 2s infinite;
+}
+
+@keyframes lightwaves {
+    0%,100% { transform: translate(0,0); }
+    25%     { transform: translate(5px,5px); transform: scale(1.05); }
+    50%     { transform: translate(25px, 5px); }
+    75%     { transform: translate(12px,10px); transform: scale(1.05); }
+}
+
+.DarkWaves {
+  animation: darkwaves 3.8s infinite;
+}
+
+@keyframes darkwaves {
+    0%,100% { transform: translate(0,0); }
+    25%     { transform: translate(25px, 5px); transform: scale(1.05); }
+    50%     { transform: translate(12px,10px); }
+    75%     { transform: translate(5px,5px); }
+}
+
+
+
+/*******
+Responsive
+********/
+
+
+  /*---------- mobile ------*/
+  
+  @media(max-width: 767px) {
+    svg {                 /***********SEA***************/
+      width: 100% ;
+      height: 100% ;
+      padding-top: 50px;
+  }
+  g {                      /*************SKY**************/
+      width: 100%;
+      height: 100%;
+  
+  }
+  }
